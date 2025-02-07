@@ -1,9 +1,9 @@
 /*
 * Programmer Name: Nicholas Woolston
 * Date: 07/02/2025 (DD//MM//YYYY)
-* File Name: Chpt2_Ex7
-* Expected Results: Write a program that displays the ocean level, in millimeters, in 5, 7, and 10 years.
-* Assume the rate at which the ocean rises is 1.5 millimeters per year.
+* File Name: Chpt2_Ex10
+* Expected Results: Write a program that calculates Miles Per Gallon. Start with the values of 375 miles and 15 gallons. Display the results.
+* Then, create a branch where the user can input values. Display the results. 
 */
 
 
@@ -14,7 +14,15 @@ int MPHCalculation(double miles, double gallons);
 
 int main()
 {
-    MPHCalculation(375, 15);
+    double userMiles;
+    double userGallons;
+    cout << "Welcome to the Miles Per Gallon calculator! \n";
+    cout << "Firstly, how many miles did you travel? \n";
+    cin >> userMiles;
+    cout << "And how many gallons did you use? \n";
+    cin >> userGallons;
+
+    MPHCalculation(userMiles, userGallons);
 }
 
 int MPHCalculation(double miles, double gallons)
