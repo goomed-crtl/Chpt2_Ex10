@@ -11,24 +11,24 @@
 #include <iostream>
 using namespace std;
 int MPHCalculation(double miles, double gallons);
-
 int main()
 {
     double userMiles;
     double userGallons;
+    double MPG;
     cout << "Welcome to the Miles Per Gallon calculator! \n";
     cout << "Firstly, how many miles did you travel? \n";
     cin >> userMiles;
     cout << "And how many gallons did you use? \n";
     cin >> userGallons;
 
-    MPHCalculation(userMiles, userGallons);
+    MPG = MPHCalculation(userMiles, userGallons);
+    cout << "With " << userGallons << " gallons of gas you went " << userMiles << " miles. Your MPG is: " << MPG;
 }
 
 int MPHCalculation(double miles, double gallons)
 {
     double MPG;
     MPG = miles / gallons;
-    cout << "With " << gallons << " gallons of gas you went " << miles << " miles. Your MPG is: " << MPG;
-    return MPG; //I honestly have no idea what to return here or why this works. I would appreciate feedback on why this works.
+    return MPG; 
 }
